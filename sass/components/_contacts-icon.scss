@@ -1,0 +1,21 @@
+.contacts-svg {
+  fill: rgba(117, 117, 117, 1);
+  margin-right: 10px;
+
+  transition: fill 250ms $bezier;
+
+  &:nth-child(1) {
+    width: 16px;
+    height: 12px;
+  }
+
+  &:nth-child(2) {
+    width: 10px;
+    height: 16px;
+  }
+
+  .contacts-head:hover &,
+  .contacts-head:focus & {
+    fill: $blue-color;
+  }
+}

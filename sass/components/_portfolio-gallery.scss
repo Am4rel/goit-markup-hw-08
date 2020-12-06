@@ -1,0 +1,81 @@
+.portfolio-container {
+  padding-left: 215px;
+  padding-right: 215px;
+}
+
+.project-name {
+  color: $primary-text;
+  font-size: 18px;
+  line-height: 2;
+  font-weight: 700;
+}
+
+.project-type {
+  color: $secondary-text;
+  font-size: 16px;
+  line-height: 1.875;
+  font-weight: 400;
+}
+
+.project-img {
+  display: block;
+}
+
+.portfolio.list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  margin-left: -30px;
+  margin-top: -30px;
+
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 94px;
+  }
+}
+
+.portfolio.list .project {
+  margin-left: 30px;
+  margin-top: 30px;
+
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+.img-description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+
+  letter-spacing: 0.03em;
+
+  color: $white-color;
+
+  background-color: rgba(33, 150, 243, 0.9);
+
+  display: flex;
+  align-items: center;
+  padding: 63px 24px;
+
+  transform: translateY(100%);
+
+  transition: transform 250ms $bezier;
+}
+
+.project-name {
+  padding-left: 24px;
+  padding-top: 20px;
+  margin-bottom: 4px;
+}
+
+.project-type {
+  padding-bottom: 20px;
+  padding-left: 24px;
+}

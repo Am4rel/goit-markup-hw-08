@@ -1,0 +1,66 @@
+.clients-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+
+  &-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.client-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #2196f3;
+
+    & .svg-icon {
+      fill: #2196f3;
+    }
+  }
+}
+
+.svg-icon {
+  fill: #afb1b8;
+
+  &:nth-child(1) {
+    width: 44px;
+    height: 49px;
+  }
+
+  &:nth-child(2) {
+    width: 40px;
+    height: 52px;
+  }
+
+  &:nth-child(3) {
+    width: 41px;
+    height: 43px;
+  }
+
+  &:nth-child(4) {
+    width: 80px;
+    height: 42px;
+  }
+
+  &:nth-child(5) {
+    width: 59px;
+    height: 47px;
+  }
+
+  &:nth-child(6) {
+    width: 88px;
+    height: 45px;
+  }
+}

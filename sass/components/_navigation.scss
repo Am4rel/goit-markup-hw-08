@@ -1,0 +1,41 @@
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+
+  transition: color 250ms $bezier;
+
+  &:hover,
+  &:focus {
+    color: $blue-color;
+  }
+
+  &.active {
+    color: $blue-color;
+  }
+}
+
+.nav-container .list-item {
+  position: relative;
+}
+
+.decor-line {
+  position: absolute;
+  bottom: -28px;
+
+  width: 100%;
+  height: 4px;
+  background-color: $blue-color;
+  border-radius: 2px;
+
+  opacity: 0;
+
+  .nav-container .nav-link.active + & {
+    opacity: 1;
+  }
+}
+
+.nav-container .list .list-item:last-child {
+  margin-right: 331px;
+}

@@ -1,0 +1,77 @@
+.team-list .social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.link-team-social {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  transition: background-color 250ms $bezier;
+
+  &:hover,
+  &:focus {
+    background-color: $blue-color;
+  }
+}
+
+.team.social-svg {
+  fill: #afb1b8;
+  width: 20px;
+  height: 20px;
+  transition: fill 250ms $bezier;
+
+  .link-team-social:hover &,
+  .link-team-social:focus & {
+    fill: $white-color;
+  }
+}
+
+.footer-social .list {
+  display: flex;
+}
+
+.footer.social-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-footer-social {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  transition: background-color 250ms $bezier;
+
+  &:hover,
+  &:focus {
+    background-color: $blue-color;
+  }
+}
+
+.footer.social-svg {
+  fill: $white-color;
+  width: 20px;
+  height: 20px;
+
+  transition: fill 250ms $bezier;
+}
+
+.footer-social .list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social {
+  padding-top: 72px;
+  margin-left: 70px;
+}

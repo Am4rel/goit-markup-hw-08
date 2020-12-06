@@ -1,0 +1,126 @@
+.contacts-foot {
+  color: $light-gray;
+
+  &:hover,
+  &:focus {
+    color: $blue-color;
+  }
+}
+
+.address-foot {
+  color: $white-color;
+
+  &:hover,
+  &:focus {
+    color: $blue-color;
+  }
+}
+
+.footer-main {
+  background-color: $bg-color;
+  font-style: normal;
+}
+
+.footer-main-container {
+  width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 215px;
+  display: flex;
+}
+
+.footer-container {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.footer.list {
+  padding-top: 20px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+
+  transition: color 250ms $bezier;
+
+  & .list-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.title-footer {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-form-container {
+  padding-top: 72px;
+  margin-left: 93px;
+}
+
+.footer-form {
+  display: flex;
+}
+
+.footer-input {
+  padding: 0 0 0 16px;
+  margin-right: 12px;
+
+  width: 358px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  color: $white-color;
+
+  transition: border 250ms $bezier;
+
+  &:focus {
+    border-color: $blue-color;
+    outline: 0;
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+
+    display: flex;
+    align-items: center;
+
+    transition: color 250ms $bezier;
+  }
+}
+
+.footer-form .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+
+  width: 200px;
+  height: 50px;
+}
+
+.footer-form-svg {
+  margin-left: 10px;
+  fill: $white-color;
+
+  transition: fill 250ms $bezier;
+
+  .footer-form .button:hover &,
+  .footer-form .button:focus & {
+    fill: $blue-color;
+  }
+}
