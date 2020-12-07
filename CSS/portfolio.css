@@ -92,23 +92,11 @@ img {
   color: #2196f3;
 }
 
-.link.contacts-head {
-  display: flex;
-  align-items: center;
-  height: 16px;
-}
-
 .header-container {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.header-container .list {
-  display: flex;
-  justify-content: space-between;
 }
 
 .header-container .list .list-item:not(:last-child) {
@@ -117,6 +105,34 @@ img {
 
 .header-container .logo {
   margin-right: 93px;
+}
+
+.mobile-menu {
+  display: inline-flex;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.mobile-menu__button {
+  text-align: center;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu__button:hover, .mobile-menu__button:focus {
+  fill: #2196f3;
+}
+
+.mobile-menu__button .cross {
+  display: none;
+}
+
+.hidden-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
 }
 
 .nav-link {

@@ -21,15 +21,16 @@
   }
 }
 
-.link.contacts-head {
-  display: flex;
-  align-items: center;
-  height: 16px;
-}
+// .link.contacts-head {
+//   display: flex;
+//   align-items: center;
+//   height: 16px;
+// }
 
 .header-container {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  position: relative;
+  // padding-top: 24px;
+  // padding-bottom: 25px;
 
   display: flex;
   justify-content: center;
@@ -37,8 +38,8 @@
 }
 
 .header-container .list {
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
 
   & .list-item:not(:last-child) {
     margin-right: 50px;
@@ -47,4 +48,34 @@
 
 .header-container .logo {
   margin-right: 93px;
+}
+
+.mobile-menu {
+  display: inline-flex;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  &__button {
+    text-align: center;
+
+    transition: fill 250ms $bezier;
+
+    &:hover,
+    &:focus {
+      fill: $blue-color;
+    }
+
+    & .cross {
+      display: none;
+    }
+  }
+}
+
+.hidden-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
 }

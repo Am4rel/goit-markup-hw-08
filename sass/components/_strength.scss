@@ -1,15 +1,24 @@
 .strength-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1170px) {
+    padding-top: 64px;
+    padding-bottom: 94px;
+  }
 }
 
 .strength.title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.143;
+  line-height: 1.172;
   text-transform: uppercase;
 
   margin-bottom: 10px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .strength-text {
@@ -17,15 +26,26 @@
 }
 
 .strength.list {
-  display: flex;
-  justify-content: center;
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-.strength .list-item {
-  width: 270px;
+.strength.list-item {
+  margin-right: 15px;
+  margin-left: 15px;
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 30px);
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 1170px) {
+    width: calc(100% / 4 - 30px);
+    margin-top: 0;
   }
 }
 

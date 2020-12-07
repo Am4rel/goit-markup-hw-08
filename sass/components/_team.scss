@@ -25,24 +25,45 @@
 
 .team.foto {
   display: block;
+  width: 100%;
+  height: auto;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1170px) {
+    width: 270px;
+  }
 }
 
 .team-container {
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 64px;
 }
 
 .team-list {
-  display: flex;
-  justify-content: center;
+  display: block;
+  margin-right: -15px;
+  margin-left: -15px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+
+  @media screen and (min-width: 1170px) {
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
 .team.list-item {
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 30px;
   background-color: $white-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
 }
