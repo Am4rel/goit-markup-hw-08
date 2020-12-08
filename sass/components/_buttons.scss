@@ -49,6 +49,8 @@
   text-align: center;
   letter-spacing: 0.03em;
 
+  margin-right: 8px;
+  margin-bottom: 15px;
   padding-top: 6px;
   padding-right: 22px;
   padding-left: 22px;
@@ -71,12 +73,19 @@
 
 .button-list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-left: 15px;
+  margin-right: -8px;
+  padding-bottom: 35px;
+  padding-top: 60px;
 
-  & .list:not(:last-child) {
-    margin-right: 8px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1170px) {
+    padding-top: 94px;
   }
 }

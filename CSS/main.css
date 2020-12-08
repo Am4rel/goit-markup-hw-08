@@ -299,6 +299,8 @@ html {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-right: 8px;
+  margin-bottom: 15px;
   padding-top: 6px;
   padding-right: 22px;
   padding-left: 22px;
@@ -316,13 +318,24 @@ html {
 
 .button-list {
   display: flex;
-  justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-left: 15px;
+  margin-right: -8px;
+  padding-bottom: 35px;
+  padding-top: 60px;
 }
 
-.button-list .list:not(:last-child) {
-  margin-right: 8px;
+@media screen and (min-width: 768px) {
+  .button-list {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .button-list {
+    padding-top: 94px;
+  }
 }
 
 .section-title {
