@@ -2,14 +2,21 @@
   color: $primary-text;
 }
 
-.header.list,
 .contacts-head {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.143;
+  font-size: 18px;
+  line-height: 1.171;
   letter-spacing: 0.02em;
 
   transition: color 250ms $bezier;
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 1170px) {
+    font-size: 14px;
+  }
 }
 
 .contacts-head {
@@ -21,45 +28,47 @@
   }
 }
 
-// .link.contacts-head {
-//   display: flex;
-//   align-items: center;
-//   height: 16px;
-// }
-
 .header-container {
   position: relative;
-  // padding-top: 24px;
-  // padding-bottom: 25px;
+  padding: 16px 15px;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-}
 
-.header-container .list {
-  // display: flex;
-  // justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
 
-  & .list-item:not(:last-child) {
-    margin-right: 50px;
+  @media screen and (min-width: 1170px) {
+    justify-content: center;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 
 .header-container .logo {
-  margin-right: 93px;
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1170px) {
+    margin-right: 93px;
+  }
 }
 
 .mobile-menu {
-  display: inline-flex;
-  background-color: transparent;
-  margin: 0;
-  padding: 0;
-  border: none;
+  width: 40px;
+  height: 40px;
 
   &__button {
-    text-align: center;
-
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     transition: fill 250ms $bezier;
 
     &:hover,
@@ -71,11 +80,30 @@
       display: none;
     }
   }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .hidden-menu {
   position: absolute;
   top: 100%;
   left: 0;
+  width: 100%;
+  background-color: white;
+
+  @media screen and (min-width: 768px) {
+    position: initial;
+    display: flex;
+
+    & .list {
+      display: flex;
+    }
+  }
+}
+
+.link.contacts-head {
+  display: inline-flex;
   width: 100%;
 }
