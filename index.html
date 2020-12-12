@@ -20,18 +20,6 @@
         <a lang="en" href="./" class="link logo"
           >Web<span class="header-logo">Studio</span></a
         >
-        <button type="button" class="mobile-menu" data-menu-button>
-          <svg class="mobile-menu__button">
-            <use
-              class="burger"
-              href="./images/symbol-defs.svg#mobile_menu"
-            ></use>
-            <use
-              class="cross"
-              href="./images/symbol-defs.svg#mobile_menu_close"
-            ></use>
-          </svg>
-        </button>
         <div class="hidden-menu" data-menu>
           <nav class="nav-container">
             <ul class="list">
@@ -68,6 +56,24 @@
             </li>
           </ul>
         </div>
+
+        <button type="button" class="mobile-menu" data-menu-button>
+          <svg
+            width="40px"
+            heigth="40px"
+            class="mobile-menu__button"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="burger"
+              href="./images/symbol-defs.svg#mobile_menu"
+            ></use>
+            <use
+              class="cross"
+              href="./images/symbol-defs.svg#mobile_menu_close"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -393,7 +399,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer-main">
+    <footer class="footer-main">
       <div class="footer-main-container">
         <div class="footer-container">
           <a lang="en" href="./" class="link logo">
@@ -501,7 +507,7 @@
             </svg>
           </label>
 
-          <label class="modal-form-label">
+          <label class="modal-form-label comment">
             Комментарий
             <textarea
               name="modal-mail"
@@ -534,7 +540,7 @@
       </div>
     </div>
 
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -15,49 +15,69 @@
     <link rel="stylesheet" href="./CSS/portfolio.min.css" />
   </head>
   <body>
-    <!-- <header>
+    <header>
       <div class="container header-container">
         <a lang="en" href="./" class="link logo"
           >Web<span class="header-logo">Studio</span></a
         >
-        <nav class="nav-container">
+        <div class="hidden-menu" data-menu>
+          <nav class="nav-container">
+            <ul class="list">
+              <li class="list-item">
+                <a href="./index.html" class="link nav-link">Студия</a>
+                <p class="decor-line"></p>
+              </li>
+              <li class="list-item">
+                <a href="./portfolio.html" class="link nav-link active"
+                  >Портфолио</a
+                >
+                <p class="decor-line"></p>
+              </li>
+              <li class="list-item">
+                <a href="" class="link nav-link">Контакты</a>
+                <p class="decor-line"></p>
+              </li>
+            </ul>
+          </nav>
           <ul class="list">
-            <li class="list-item">
-              <a href="./index.html" class="link nav-link">Студия</a>
-              <p class="decor-line"></p>
+            <li class="contacts list-item">
+              <a href="mailto:info@devstudio.com" class="link contacts-head">
+                <svg class="contacts-svg mail-icon">
+                  <use href="./images/symbol-defs.svg#mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="list-item">
-              <a href="./portfolio.html" class="link nav-link active"
-                >Портфолио</a
-              >
-              <p class="decor-line"></p>
-            </li>
-            <li class="list-item">
-              <a href="" class="link nav-link">Контакты</a>
-              <p class="decor-line"></p>
+            <li class="contacts list-item">
+              <a href="tel:+380961111111" class="link contacts-head">
+                <svg class="contacts-svg tel-icon">
+                  <use href="./images/symbol-defs.svg#tel"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
           </ul>
-        </nav>
-        <ul class="list">
-          <li class="contacts list-item">
-            <a href="mailto:info@devstudio.com" class="link contacts-head">
-              <svg class="contacts-svg">
-                <use href="./images/symbol-defs.svg#mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contacts list-item">
-            <a href="tel:+380961111111" class="link contacts-head">
-              <svg class="contacts-svg">
-                <use href="./images/symbol-defs.svg#tel"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+        </div>
+
+        <button type="button" class="mobile-menu" data-menu-button>
+          <svg
+            width="40px"
+            heigth="40px"
+            class="mobile-menu__button"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="burger"
+              href="./images/symbol-defs.svg#mobile_menu"
+            ></use>
+            <use
+              class="cross"
+              href="./images/symbol-defs.svg#mobile_menu_close"
+            ></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
     <main>
       <section>
         <div class="container button-container">
@@ -284,7 +304,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer-main">
+    <footer class="footer-main">
       <div class="footer-main-container">
         <div class="footer-container">
           <a lang="en" href="./" class="link logo">
@@ -361,6 +381,8 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -40,6 +40,11 @@
 .team-container {
   padding-top: 94px;
   padding-bottom: 64px;
+
+  @media screen and (max-width: 767px) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 .team-list {

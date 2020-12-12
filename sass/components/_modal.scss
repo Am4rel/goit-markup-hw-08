@@ -10,8 +10,7 @@
 
   overflow: auto;
 
-  width: 530px;
-  height: 580px;
+  width: 450px;
 
   background-color: $white-color;
 
@@ -20,6 +19,10 @@
   border-radius: 4px;
 
   transition: transform 250ms $bezier;
+
+  @media screen and (min-width: 1170px) {
+    width: 528px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -60,9 +63,13 @@
 
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1170px) {
+    line-height: 1.15;
+  }
 }
 
 .modal-form {
@@ -102,6 +109,9 @@
   }
 
   &:last-child {
+    font-size: 14px;
+    line-height: 1.143;
+
     height: 120px;
 
     padding-left: 15px;
@@ -130,8 +140,8 @@
 
 .modal-form-label {
   position: relative;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.166;
 
   letter-spacing: 0.03em;
 
